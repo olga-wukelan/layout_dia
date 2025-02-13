@@ -5,6 +5,10 @@
 
   &__body {
     margin: 0;
+    
+    &:has(.page__nav:target) {
+        overflow: hidden;
+      }
   }
 
   &__nav {
@@ -27,6 +31,7 @@
       pointer-events: all;
       height: 100vh;
     }
+
     &:has(.page__menu:target) {
       overflow: hidden;
     }
